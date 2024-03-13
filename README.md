@@ -21,8 +21,8 @@ Large Multimodal Model (LMM) is a hot research topic in the computer vision area
 ### Object Detection
 | Type               | Model            | Input Size |  mAP  | AP50 | AP75 |
 |--------------------|------------------|------------|------|------|------|
-| Specialists        | Faster R-CNN-R50 | 1333*800   | 26.3 | 42.1 | 27.5 | 
-|                    | DETR-DC5         | 1333*800   | 43.0 | 61.0 | 45.6 |
+| Specialists        | Faster R-CNN-R50 | 1333*800   | 40.3 | 61.0 | 44.0 | 
+|                    | DETR-DC5         | 1333*800   | 43.3 | 63.1 | 45.9 |
 | Vision Generalists | Pix2Seq-v2       | 1024*1024  | 46.5 |   -  |  -  |
 |                    | UniPerceiver-v2  | 1600*1400  | 58.6 |   -  |  -  |
 | LMM Generalists    | Griffon-13B      | 448*448    | 24.8 | 40.6 | 25.1 |
