@@ -3,9 +3,10 @@
 <font size=7><div align='center'><b>Lumen</b>: <b>L</b>arge m<b>u</b>ltimodal <b>m</b>odel with versatile vision-centric capabilities <b>en</b>hancement</div></font>
 
 ## News
+- [x] [2024.3.13] Lumen [paper](https://arxiv.org/abs/2403.07304) is released on the arxiv.
 - [x] [2024.3.12] Lumen GitHub repo is created.
 
-**Lumen: Unleashing Versatile Vision-centric Capabilities of [[Paper](https://github.com/SxJyJay/Lumen)]** <br />
+**Lumen: Unleashing Versatile Vision-centric Capabilities of [[Paper](https://arxiv.org/abs/2403.07304)]** <br />
 [Yang Jiao](https://scholar.google.com/citations?user=5gA7Wv0AAAAJ&hl=zh-CN),
 [Shaoxiang Chen](https://scholar.google.com/citations?user=WL5mbfEAAAAJ&hl=zh-CN),
 [Zequn Jie](https://scholar.google.com/citations?user=4sKGNB0AAAAJ&hl=zh-CN&oi=sra),
@@ -16,11 +17,46 @@
 ## Abstract
 Large Multimodal Model (LMM) is a hot research topic in the computer vision area and has also demonstrated remarkable potential across multiple disciplinary fields. A recent trend is to further extend and enhance the perception capabilities of LMMs. The current methods follow the paradigm of adapting the visual task outputs to the format of the language model, which is the main component of a LMM. This adaptation leads to convenient development of such LMMs with minimal modifications, however, it overlooks the intrinsic characteristics of diverse visual tasks and hinders the learning of perception capabilities. To address this issue, we propose a novel LMM architecture named Lumen, a Large multimodal model with versatile vision-centric capability enhancement. We decouple the LMM's learning of perception capabilities into task-agnostic and task-specific stages. Lumen first promotes fine-grained vision-language concept alignment, which is the fundamental capability for various visual tasks. Thus the output of the task-agnostic stage is a shared representation for all the tasks we address in this paper. Then the task-specific decoding is carried out by flexibly routing the shared representation to lightweight task decoders with negligible training efforts.
 
+## Performances
+### Object Detection
+| Type               | Model            | Input Size |  mAP  | AP50 | AP75 |
+|--------------------|------------------|------------|------|------|------|
+| Specialists        | Faster R-CNN-R50 | 1333*800   | 26.3 | 42.1 | 27.5 | 
+|                    | DETR-DC5         | 1333*800   | 43.0 | 61.0 | 45.6 |
+| Vision Generalists | Pix2Seq-v2       | 1024*1024  | 46.5 |   -  |  -  |
+|                    | UniPerceiver-v2  | 1600*1400  | 58.6 |   -  |  -  |
+| LMM Generalists    | Griffon-13B      | 448*448    | 24.8 | 40.6 | 25.1 |
+|                    | **Lumen-7B**     | 448*448    | 33.9 | 51.2 | 34.2 |
+
+### Instance Segmentation
+| Type               | Model            |  mAP  | AP50 | AP75 |
+|--------------------|------------------|------|------|------|
+| Specialists        | Mask R-CNN-R50   | 37.1 | 58.4 | 40.1 | 
+|                    | PolarMask        | 30.5 | 52.0 | 31.1 |
+| Vision Generalists | Pix2Seq-v2       | 38.2 |   -  |  -  |
+|                    | UniPerceiver-v2  | 50.6 |   -  |  -  |
+| LMM Generalists    | **Lumen-7B**     | 29.1 | 47.5 | 29.6 |
+
+### Pose Estimation
+| Type               | Model            |  mAP  | AP50 | AP75 |
+|--------------------|------------------|------|------|------|
+| Specialists        | CPM              | 62.7 | 86.2 | 70.9 | 
+|                    | RTMPose          | 68.2 | 88.3 | 75.9 |
+| Vision Generalists | Pix2Seq-v2       | 64.8 |   -  |  -  |
+| LMM Generalists    | **Lumen-7B**     | 65.4 | 90.4 | 72.2 |
 
 ## Citation 
 If you find this project useful in your research, please consider citing:
 
 ```
+@misc{jiao2024lumen,
+      title={Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models}, 
+      author={Yang Jiao and Shaoxiang Chen and Zequn Jie and Jingjing Chen and Lin Ma and Yu-Gang Jiang},
+      year={2024},
+      eprint={2403.07304},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## Acknowledgement
