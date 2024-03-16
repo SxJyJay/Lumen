@@ -49,13 +49,11 @@ Large Multimodal Model (LMM) is a hot research topic in the computer vision area
 If you find this project useful in your research, please consider citing:
 
 ```
-@misc{jiao2024lumen,
-      title={Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models}, 
-      author={Yang Jiao and Shaoxiang Chen and Zequn Jie and Jingjing Chen and Lin Ma and Yu-Gang Jiang},
-      year={2024},
-      eprint={2403.07304},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{jiao2024lumen,
+  title={Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models},
+  author={Jiao, Yang and Chen, Shaoxiang and Jie, Zequn and Chen, Jingjing and Ma, Lin and Jiang, Yu-Gang},
+  journal={arXiv preprint arXiv:2403.07304},
+  year={2024}
 }
 ```
 
