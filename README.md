@@ -1,4 +1,4 @@
-# [Neurips 2024] Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models
+# Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models
 
 <font size=7><div align='center'><b>Lumen</b>: <b>L</b>arge m<b>u</b>ltimodal <b>m</b>odel with versatile vision-centric capabilities <b>en</b>hancement</div></font>
 
