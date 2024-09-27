@@ -3,7 +3,7 @@
 <font size=7><div align='center'><b>Lumen</b>: <b>L</b>arge m<b>u</b>ltimodal <b>m</b>odel with versatile vision-centric capabilities <b>en</b>hancement</div></font>
 
 ## News
-- [x] [2024.9.26] [Lumen](https://arxiv.org/abs/2403.07304) is accepted to Neurips2024 🎉🎉🎉
+- [x] [2024.9.26] [Lumen](https://arxiv.org/abs/2403.07304) is accepted to NeurIPS2024 🎉🎉🎉
 - [x] [2024.5.30] Upgraded version of [Lumen-v1.5](https://arxiv.org/abs/2403.07304) is introduced. Lumen-v1.5 extends versatile vision-centric capabilities while maintaining general-purpose conversational capabilities.
 - [x] [2024.3.13] Lumen [paper](https://arxiv.org/abs/2403.07304) is released on the arxiv.
 - [x] [2024.3.12] Lumen GitHub repo is created.
